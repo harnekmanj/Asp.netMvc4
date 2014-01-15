@@ -1,21 +1,21 @@
-﻿@model MvcApplication1.Models.AdditionModel
+﻿@model MvcApplication1.Models.SubtractModel
 
 <!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>AdditionPractice</title>
+    <title>SubtractPractice</title>
 </head>
 <body>
     <div>
-        <h1>Addition</h1>
+        <h1>Subtraction</h1>
         <table>
             @for(int i=0;i< @Model.Equations.Count; i++)
             {
             <tr>
                 <td>@Model.Equations[i].Lhs</td>
-                <td> + </td>
+                <td> - </td>
                 <td>@Model.Equations[i].Rhs</td>
             </tr>
             }

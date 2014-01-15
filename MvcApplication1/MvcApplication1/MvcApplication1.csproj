@@ -171,6 +171,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AdditionModel.cs" />
+    <Compile Include="Models\Equation.cs" />
+    <Compile Include="Models\ExpandedFormModel.cs" />
+    <Compile Include="Models\SubtractModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +279,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Home\AdditionPractice.cshtml" />
+    <Content Include="Views\Home\SubtractionPractice.cshtml" />
+    <Content Include="Views\Home\ExpandedFormPractice.cshtml" />
+    <Content Include="Views\Home\PlaceValuePractice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

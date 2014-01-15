@@ -15,12 +15,27 @@ namespace MvcApplication1.Controllers
       public ActionResult AdditionPractice()
       {
           Models.AdditionModel add = new Models.AdditionModel();
-          System.Random random = new Random();
-          add.Rhs = random.Next(15);
-          add.Lhs = random.Next(25);
           return View(add);
       }
 
+      public ActionResult SubtractionPractice()
+      {
+          Models.SubtractModel subtract = new Models.SubtractModel();
+          return View(subtract);
+      }
+
+      public ActionResult ExpandedFormPractice()
+      {
+          Models.ExpandedFormModel expandedForm = new Models.ExpandedFormModel();
+          return View(expandedForm);
+      }
+
+      public ActionResult PlaceValuePractice()
+      {
+          Models.ExpandedFormModel expandedForm = new Models.ExpandedFormModel();
+          return View(expandedForm);
+      }
+       
       public ActionResult About()
       {
          ViewBag.Message = "Your app description page.";
