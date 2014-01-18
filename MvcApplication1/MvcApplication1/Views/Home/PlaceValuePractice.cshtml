@@ -1,25 +1,7 @@
-﻿@model MvcApplication1.Models.ExpandedFormModel
+﻿    <script type="text/javascript">
+        function ShowAlert() {
+            alert('Hello');
+        }
+    </script>
+<body onload="ShowAlert()"></body>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>PlaceValuePractice</title>
-</head>
-<body>
-    <div>
-        <h1>Place Value</h1>
-        <table>
-            @for(int i=0;i< @Model.Digits.Count; i++)
-            {
-            <tr>
-                <td>
-
-                </td>
-            </tr>
-            }
-        </table>
-    </div>
-</body>
-</html>
