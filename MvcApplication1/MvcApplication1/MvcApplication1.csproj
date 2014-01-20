@@ -166,6 +166,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\WriteNumberFormController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -282,6 +283,7 @@
     <Content Include="Views\Home\SubtractionPractice.cshtml" />
     <Content Include="Views\Home\ExpandedFormPractice.cshtml" />
     <Content Include="Views\Home\PlaceValuePractice.cshtml" />
+    <Content Include="Views\Home\WriteNumberFormPractice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -5,7 +5,7 @@
                 var number = Math.floor((Math.random() * 10000) + 100);
                 var underlineIndex = Math.floor((Math.random() * 4) + 1);
                 var numberWithUnderline = number.toString().substring(1, underlineIndex - 2) + "<a>" + number.toString().substring(underlineIndex - 2, underlineIndex - 1) + "</a>" + number.toString().substring(underlineIndex);
-                strResult += "<tr><td>" + numberWithUnderline + "</td></tr>";
+                strResult += "<tr><td>" + number + " " + numberWithUnderline + "</td></tr>";
             }
             strResult += "</table>";
             $("#divResult").html(strResult);

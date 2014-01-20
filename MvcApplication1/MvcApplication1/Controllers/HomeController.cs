@@ -30,7 +30,7 @@ namespace MvcApplication1.Controllers
           return View(expandedForm);
       }
 
-      public ActionResult PlaceValuePractice()
+      public ActionResult WriteNumberFormPractice()
       {
           return View();
       }
