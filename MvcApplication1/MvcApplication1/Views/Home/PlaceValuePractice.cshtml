@@ -1,7 +1,17 @@
 ﻿    <script type="text/javascript">
-        function ShowAlert() {
-            alert('Hello');
+        function ShowPlaceValue() {
+            var strResult = "<table>";
+            for (var i = 0; i <= 10; i++) {
+                var number = Math.floor((Math.random() * 10000) + 100);
+                var underlineIndex = Math.floor((Math.random() * 4) + 1);
+                var numberWithUnderline = number.toString().substring(1, underlineIndex - 2) + "<a>" + number.toString().substring(underlineIndex - 2, underlineIndex - 1) + "</a>" + number.toString().substring(underlineIndex);
+                strResult += "<tr><td>" + numberWithUnderline + "</td></tr>";
+            }
+            strResult += "</table>";
+            $("#divResult").html(strResult);
         }
     </script>
-<body onload="ShowAlert()"></body>
+<body onload="ShowPlaceValue()">
+    <div id="divResult" style="margin-left: 15px"></div>
+</body>
 

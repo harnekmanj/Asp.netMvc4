@@ -32,8 +32,7 @@ namespace MvcApplication1.Controllers
 
       public ActionResult PlaceValuePractice()
       {
-          Models.ExpandedFormModel expandedForm = new Models.ExpandedFormModel();
-          return View(expandedForm);
+          return View();
       }
        
       public ActionResult About()
