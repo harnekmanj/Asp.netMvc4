@@ -12,9 +12,11 @@ namespace MvcApplication1.Controllers
         //
         // GET: /WriteNumberForm/
 
-        public ActionResult Index()
+        public IEnumerable<string> GetNumberInTextFormat()
         {
-            return new ContentResult();
+            Models.ExpandedFormModel expandedFormModel = new Models.ExpandedFormModel();
+            //return expandedFormModel.NumberInEnglishForm();
+            return new List<string>();
         }
 
     }

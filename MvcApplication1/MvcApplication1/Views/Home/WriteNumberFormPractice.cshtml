@@ -1,5 +1,19 @@
-﻿@{
-    ViewBag.Title = "WriteNumberFormPractice";
-}
+﻿<h2>WriteNumberFormPractice</h2>
 
-<h2>WriteNumberFormPractice</h2>
+<div>
+    <ul id="numbers" />
+  </div>
+
+<script>
+    var uri = 'api/WriteNumberForm';
+
+    $(document).ready(function ()
+    {
+        $.getJSON(uri).done(function (data)
+        {
+            $.each(data, function (key, element) {
+                $(element).appendTo($('numbers'));
+            });
+            });
+    });
+</script>

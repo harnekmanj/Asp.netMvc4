@@ -30,9 +30,10 @@ namespace MvcApplication1.Controllers
           return View(expandedForm);
       }
 
-      public ActionResult WriteNumberFormPractice()
+      public ActionResult NumberFormPractice()
       {
-          return View();
+          Models.ExpandedFormModel expandedForm = new Models.ExpandedFormModel();
+          return View(expandedForm);
       }
        
       public ActionResult About()

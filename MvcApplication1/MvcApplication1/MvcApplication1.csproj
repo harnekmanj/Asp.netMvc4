@@ -284,6 +284,7 @@
     <Content Include="Views\Home\ExpandedFormPractice.cshtml" />
     <Content Include="Views\Home\PlaceValuePractice.cshtml" />
     <Content Include="Views\Home\WriteNumberFormPractice.cshtml" />
+    <Content Include="Views\Home\NumberFormPractice.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
