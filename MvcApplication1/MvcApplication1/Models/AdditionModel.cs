@@ -12,11 +12,11 @@ namespace MvcApplication1.Models
         public AdditionModel()
         {
             System.Random random = new Random();
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i <= 15; i++)
             {
                 Equation e = new Equation();
-                e.Lhs = random.Next(65);
-                e.Rhs = random.Next(25);
+                e.Lhs = random.Next(100, 999);
+                e.Rhs = random.Next(100, 999);
                 _equations.Add(e);
             }
         }

@@ -12,9 +12,9 @@ namespace MvcApplication1.Models
         public ExpandedFormModel()
         {
             System.Random random = new Random();
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i <= 20; i++)
             {
-                _digits.Add(random.Next(101, 9999));
+                _digits.Add(random.Next(500, 99999));
             }
         }
 
