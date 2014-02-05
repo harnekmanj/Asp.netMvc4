@@ -29,6 +29,7 @@ namespace MvcApplication1.DependencyResolution {
                             //        });
                            //x.For<IExample>().Use<Example>();
                             x.For<Models.Interface.IGenerateMathEquation>().Use<Models.GenerateMathEquation>();
+                            x.For<APIPlumbing.IApiHttp>().Use<APIPlumbing.ApiHttp>();
                         });
             return ObjectFactory.Container;
         }
